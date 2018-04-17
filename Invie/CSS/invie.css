@@ -33,6 +33,14 @@ body{
   margin-bottom: 70px;
 }
 
+button{
+  border-radius: 8px;
+  background-color: #fd324e;
+  color:white;
+  border: none;
+  padding: 8px;
+}
+
 .titulo{
   font-size: 70px;
   font-family: 'Montserrat', sans-serif;
@@ -60,7 +68,7 @@ body{
   font-size: 35px;
 }
 
-.logotipo, .menu, .menu li {
+.logotipo, .menu, .menu li, {
  display: inline-block;
 }
 .contenedor {
@@ -70,6 +78,7 @@ body{
 .guitarra{
   /* overflow: hidden; */
   border: 1px solid #1F313C;
+  border-radius: 8px;
   margin: 10px;
   padding: 10px
 }
@@ -95,4 +104,27 @@ body{
 }
 .header {
   position: relative;
+}
+.footer{
+  background-color: #273b47;
+}
+.contacto  {
+margin-top: 50px;
+  padding-top: 30px;
+}
+.contacto img, .contacto strong {
+  display: block;
+}
+
+.contacto a {
+  color: white;
+  text-decoration: none;
+  display: inline;
+}
+.contenedor-contacto {
+  display: inline-block;
+  margin: 30px 10px 10px 10px;
+}
+.formulario {
+  color: white;
 }
