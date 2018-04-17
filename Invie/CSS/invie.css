@@ -12,18 +12,35 @@ body {
 
 /* estilo y tamaño de fuentes */
 
+.logotipo {
+  margin-left: 0;
+}
+
 .menu {
   font-size: 24px;
   position: absolute;
   right: 0;
 }
 
+.menu a {
+  color: white;
+  text-decoration: none;
+}
+
 .menu li {
   margin-left: 30px;
 }
 
+.menu li::before{
+  content: "∘";
+  font-size: 50px;
+  line-height: 20px;
+  color: white;
+}
+
 .portada {
   background-image: url("../images/background.png");
+  background-size: cover;
   color: white;
   padding: 20px;
 }
@@ -33,11 +50,14 @@ body {
 }
 
 .button {
-  border-radius: 8px;
-  background-color: #fd324e;
+  border-radius: 12px;
   color: white;
   border: none;
-  padding: 8px;
+  padding: 7px, 12px;
+  cursor: pointer;
+  font-size: 18px;
+  background: linear-gradient(to left, #fe344e, #ff7250);
+
 }
 
 .titulo {
@@ -46,6 +66,10 @@ body {
   font-weight: bold;
   margin-bottom: 0;
   margin-top: 70px;
+}
+
+.titulo span {
+  text-decoration: underline;
 }
 
 .title-a {
@@ -171,4 +195,27 @@ body {
 
 .sexo{
   margin-top: 10px;
+}
+/* hoja precios */
+table {
+  width: 100%;
+}
+
+th {
+  background: #273b47;
+  color: white;
+}
+
+th {
+  padding: 10px 20px;
+  text-align: left;
+}
+
+td {
+  padding: 20px;
+}
+
+table, td, th {
+  border: 1px solid #273b47;
+  border-collapse: collapse;
 }
